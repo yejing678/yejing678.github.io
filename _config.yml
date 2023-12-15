@@ -1,3 +1,17 @@
+# _config.yml
+
+# Site settings
+title: "yejing678's Homepage"
+description: "Bookmark this to keep an eye on my project updates!"
+baseurl: "" # the subpath of your site, e.g., /blog
+url: "https://yejing678.github.io" # the base hostname & protocol for your site
+
+# Build settings
+markdown: kramdown
 theme: jekyll-theme-minimal
-title: yejing678's homepage
-description: Bookmark this is to keep an eye on my project updates!
+plugins:
+  - jekyll-feed
+
+# Jekyll Feed configuration
+feed:
+  post_url: "/blog/:year/:month/:day/:title.html"
